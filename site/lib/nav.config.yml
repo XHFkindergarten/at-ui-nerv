@@ -60,6 +60,8 @@ zh:
               name: Slider
             - title: 文本域
               name: Textarea
+            - title: 表单
+              name: Form
         - title: 视图组件
           items:
             - title: 警告提示

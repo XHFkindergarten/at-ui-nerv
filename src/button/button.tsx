@@ -5,6 +5,7 @@ import ButtonGroup from './button-group'
 
 export type ButtonType = 'default' | 'primary' | 'success' | 'error' | 'warning' | 'info' | 'text'
 export type ButtonSize = 'large' | 'small' | 'smaller'
+export type ButtonNativeType = 'button' | 'reset' | 'submit'
 
 export interface ButtonProps {
   type?: ButtonType
@@ -12,7 +13,7 @@ export interface ButtonProps {
   icon?: string
   size?: ButtonSize
   hollow?: boolean
-  nativeType?: string
+  nativeType?: ButtonNativeType
   loading?: boolean
   circle?: boolean
   disabled?: boolean
@@ -24,6 +25,7 @@ class Button extends Component<ButtonProps, any> {
   static defaultProps = {
     loading: false,
     type: 'default',
+    nativeType: 'button',
     disabled: false
   }
 
